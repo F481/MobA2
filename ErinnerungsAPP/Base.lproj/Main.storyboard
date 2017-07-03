@@ -250,7 +250,7 @@
         <!--New/Edit-->
         <scene sceneID="TlY-ix-DMt">
             <objects>
-                <viewController title="New/Edit" id="TIW-D5-VXX" sceneMemberID="viewController">
+                <viewController title="New/Edit" id="TIW-D5-VXX" customClass="ViewController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0PS-lZ-tS1"/>
                         <viewControllerLayoutGuide type="bottom" id="gvF-l8-hY5"/>
@@ -259,28 +259,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aMc-yk-qic">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aMc-yk-qic">
                                 <rect key="frame" x="-2" y="163" width="375" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="520690464.78957599">
                                     <!--2017-07-02 12:14:24 +0000-->
                                 </date>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjO-IU-DJa">
-                                <rect key="frame" x="33" y="105" width="304" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name der Erinnerung" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mjO-IU-DJa">
+                                <rect key="frame" x="35" y="107" width="304" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" label="sss"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOj-us-9cV">
-                                <rect key="frame" x="170" y="567" width="34" height="30"/>
+                                <rect key="frame" x="170" y="601" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveReminderPressed:" destination="TIW-D5-VXX" eventType="touchUpInside" id="Lqa-1o-Af9"/>
+                                </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lbr-X6-abV">
+                                <rect key="frame" x="-2" y="387" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="categoryPicker" destination="lbr-X6-abV" id="7Nd-5d-Cxt"/>
+                        <outlet property="reminderDate" destination="aMc-yk-qic" id="nBX-fQ-ABC"/>
+                        <outlet property="reminderNameField" destination="mjO-IU-DJa" id="538-97-piT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe3-Ku-Xca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
