@@ -31,9 +31,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         categories = ["Geburtstag", "Jahrestag", "Hochzeit", "Valentinstag"]
         // select the first entry by default (if there is no change to the pick viewer we will get a correct value
         selectedCategory = categories[0]
-        
-        // set default to last entry, because it looks nicer if the margin at top isn't so large at the beginning.
-        categoryPicker.selectRow(3, inComponent:0, animated:true)
     }
 
     override func didReceiveMemoryWarning() {
