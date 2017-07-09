@@ -180,7 +180,7 @@
         <!--Erinnerungen-->
         <scene sceneID="Yoj-Yd-UFA">
             <objects>
-                <tableViewController title="Erinnerungen" id="54g-FG-VR1" sceneMemberID="viewController">
+                <tableViewController title="Erinnerungen" id="54g-FG-VR1" customClass="OverviewTableViewController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dmY-vQ-N2c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,6 +214,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableOverview" destination="dmY-vQ-N2c" id="IMR-mp-Luk"/>
                         <segue destination="TIW-D5-VXX" kind="show" id="dLY-ze-gR3"/>
                         <segue destination="gZV-ly-oEm" kind="show" id="JI2-nn-a3Z"/>
                     </connections>
@@ -301,11 +302,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SFj-fa-oh8"/>
         <segue reference="buR-mg-iMA"/>
         <segue reference="loy-1D-Iu1"/>
-        <segue reference="j7H-jc-noa"/>
-        <segue reference="JI2-nn-a3Z"/>
+        <segue reference="SFj-fa-oh8"/>
         <segue reference="1ci-qR-xfG"/>
+        <segue reference="j7H-jc-noa"/>
+        <segue reference="HWM-SZ-GQC"/>
     </inferredMetricsTieBreakers>
 </document>

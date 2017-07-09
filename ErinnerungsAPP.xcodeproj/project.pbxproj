@@ -13,6 +13,7 @@
 		B6E81E1A1F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E81E181F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld */; };
 		B6E81E1C1F08FF5500826A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E81E1B1F08FF5500826A84 /* Assets.xcassets */; };
 		B6E81E1F1F08FF5500826A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E81E1D1F08FF5500826A84 /* LaunchScreen.storyboard */; };
+		D1FD2B891F12094600DA8C1D /* OverviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD2B881F12094600DA8C1D /* OverviewTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B6E81E1B1F08FF5500826A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E81E1E1F08FF5500826A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E81E201F08FF5500826A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1FD2B881F12094600DA8C1D /* OverviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B6E81E111F08FF5500826A84 /* AppDelegate.swift */,
 				B6E81E131F08FF5500826A84 /* ViewController.swift */,
 				B6E81E151F08FF5500826A84 /* Main.storyboard */,
+				D1FD2B881F12094600DA8C1D /* OverviewTableViewController.swift */,
 				B6E81E1B1F08FF5500826A84 /* Assets.xcassets */,
 				B6E81E1D1F08FF5500826A84 /* LaunchScreen.storyboard */,
 				B6E81E201F08FF5500826A84 /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				B6E81E141F08FF5500826A84 /* ViewController.swift in Sources */,
 				B6E81E1A1F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld in Sources */,
+				D1FD2B891F12094600DA8C1D /* OverviewTableViewController.swift in Sources */,
 				B6E81E121F08FF5500826A84 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +307,7 @@
 				B6E81E251F08FF5500826A84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
