@@ -66,18 +66,27 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func saveReminderPressed(_ sender: Any) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let reminder = Reminder(context: context) // link reminder and context
-        reminder.name = reminderNameField.text!
-        reminder.date = reminderDate.date as NSDate
-        reminder.catecory = Int16(selectedCategory)
         
-        // save to coredata
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        // move back to overview
-        let _ = navigationController?.popViewController(animated: true)
-        
-        print(reminderNameField.text!)
-        print(reminderDate.date)
-        print(selectedCategory)
+        if reminderNameField.text != "" {
+            reminder.name = reminderNameField.text
+            reminder.date = reminderDate.date as NSDate
+            reminder.catecory = Int16(selectedCategory)
+            
+            // save to coredata
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            // move back to overview
+            let _ = navigationController?.popViewController(animated: true)
+            
+            print(reminderNameField.text!)
+            print(reminderDate.date)
+            print(selectedCategory)
+        } else {
+            let alert = UIAlertController(title: "Fehler", message:
+                "Bitte gib der Erinnerung einen Namen!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Verstanden", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }
 
