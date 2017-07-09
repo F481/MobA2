@@ -24,7 +24,7 @@ class OverviewTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,6 +59,37 @@ class OverviewTableViewController: UITableViewController {
         return cell
     }
     
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            // delete selected reminder from coredata
+            let reminder = reminders[indexPath.row]
+            reminders.remove(at: indexPath.row)
+            context.delete(reminder)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            // refresh the table to delete the reminder there also
+            do {
+                reminders = try context.fetch(Reminder.fetchRequest())
+            } catch {
+                print("Fetching Failed")
+            }
+            tableOverview.reloadData()
+            
+            // this is the alternative to delete the entry from table view, but we use the reloadData() method above to be sure that we are in sync with coredata
+            //tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+    }
+    
     func getData() {
         do {
             reminders = try context.fetch(Reminder.fetchRequest())
@@ -66,26 +97,6 @@ class OverviewTableViewController: UITableViewController {
             print("Fetching Failed")
         }
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
 
     /*
     // Override to support rearranging the table view.

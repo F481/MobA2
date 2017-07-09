@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -204,14 +203,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Erinnerungen" id="Pe5-Qz-Um2">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="8H9-tH-zw2">
-                                <connections>
-                                    <segue destination="TIW-D5-VXX" kind="show" id="j7H-jc-noa"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="trash" id="tyv-T4-zxM"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8H9-tH-zw2">
+                            <connections>
+                                <segue destination="TIW-D5-VXX" kind="show" id="j7H-jc-noa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableOverview" destination="dmY-vQ-N2c" id="IMR-mp-Luk"/>
