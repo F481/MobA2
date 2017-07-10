@@ -152,7 +152,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Erinnerungen"/>
                                 <connections>
-                                    <segue destination="54g-FG-VR1" kind="show" id="loy-1D-Iu1"/>
+                                    <segue destination="avT-Sh-OeE" kind="show" id="loy-1D-Iu1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTO-dD-Hmz">
@@ -168,7 +168,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="ErinnerungsAPP" id="0NT-Fw-h1n"/>
                     <connections>
-                        <segue destination="54g-FG-VR1" kind="show" id="H2b-Vj-haG"/>
+                        <segue destination="avT-Sh-OeE" kind="show" id="H2b-Vj-haG"/>
                         <segue destination="zsx-1s-qC8" kind="show" id="buR-mg-iMA"/>
                     </connections>
                 </viewController>
@@ -193,7 +193,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="gZV-ly-oEm" kind="show" id="HWM-SZ-GQC"/>
+                                    <segue destination="gZV-ly-oEm" kind="show" identifier="detailSegue" id="HWM-SZ-GQC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -217,12 +217,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80G-cZ-6vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1242" y="79"/>
+            <point key="canvasLocation" x="2180" y="78.710644677661179"/>
         </scene>
         <!--Geb Name-->
         <scene sceneID="THj-sG-y6z">
             <objects>
-                <viewController title="Geb Name" id="gZV-ly-oEm" sceneMemberID="viewController">
+                <viewController title="Geb Name" id="gZV-ly-oEm" customClass="DetailController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pwc-CA-792"/>
                         <viewControllerLayoutGuide type="bottom" id="6nB-r8-SB7"/>
@@ -230,6 +230,50 @@
                     <view key="view" contentMode="scaleToFill" id="ukg-wZ-XlG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rn-Mp-4MW">
+                                <rect key="frame" x="39" y="134" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Datum:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6N-Gi-f89">
+                                <rect key="frame" x="39" y="192" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kategorie:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R6-Lu-mjp">
+                                <rect key="frame" x="39" y="253" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dri-ws-zxR">
+                                <rect key="frame" x="139" y="134" width="183" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXQ-65-QKU">
+                                <rect key="frame" x="139" y="191" width="183" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgc-d0-hH1">
+                                <rect key="frame" x="139" y="253" width="183" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="GebName" id="0Wg-HL-PCU">
@@ -239,10 +283,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="reminderCategoryOutlet" destination="Wgc-d0-hH1" id="EUm-7u-4CQ"/>
+                        <outlet property="reminderDateOutlet" destination="EXQ-65-QKU" id="Rbh-DU-xc7"/>
+                        <outlet property="reminderNameOutlet" destination="Dri-ws-zxR" id="f82-S6-rgV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxi-dJ-OS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2121" y="282"/>
+            <point key="canvasLocation" x="3060" y="281.10944527736132"/>
         </scene>
         <!--New/Edit-->
         <scene sceneID="TlY-ix-DMt">
@@ -294,15 +343,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe3-Ku-Xca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2117.5999999999999" y="-432.23388305847078"/>
+            <point key="canvasLocation" x="3056.8000000000002" y="-432.23388305847078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vAB-YG-WUq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avT-Sh-OeE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="exN-Yc-SdX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="54g-FG-VR1" kind="relationship" relationship="rootViewController" id="DGb-wL-zyf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QnV-ZV-Mvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.8" y="78.710644677661179"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="buR-mg-iMA"/>
         <segue reference="loy-1D-Iu1"/>
+        <segue reference="buR-mg-iMA"/>
+        <segue reference="HWM-SZ-GQC"/>
+        <segue reference="gCh-Xr-Iew"/>
         <segue reference="SFj-fa-oh8"/>
         <segue reference="1ci-qR-xfG"/>
-        <segue reference="j7H-jc-noa"/>
-        <segue reference="HWM-SZ-GQC"/>
     </inferredMetricsTieBreakers>
 </document>

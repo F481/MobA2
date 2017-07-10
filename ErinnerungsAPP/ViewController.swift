@@ -28,6 +28,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.categoryPicker.delegate = self
         self.categoryPicker.dataSource = self
         
+        // TODO move to a central position?
         // fill the array with the categories we want
         categories = ["Geburtstag", "Jahrestag", "Hochzeit", "Valentinstag"]
         

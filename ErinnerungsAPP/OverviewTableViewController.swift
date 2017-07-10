@@ -13,6 +13,7 @@ class OverviewTableViewController: UITableViewController {
     @IBOutlet weak var tableOverview: UITableView!
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var reminders: [Reminder] = []
+    var selectedReminder: Reminder!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +91,27 @@ class OverviewTableViewController: UITableViewController {
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("select row")
+        selectedReminder = reminders[indexPath.row]
+                
+        let cell = tableView.cellForRow(at: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "detailSegue", sender: cell)
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "detailSegue" {
+            let nextScene = segue.destination as! DetailController
+            
+            nextScene.reminder = selectedReminder
+        }
+    }
+    
     func getData() {
         do {
             reminders = try context.fetch(Reminder.fetchRequest())
@@ -112,15 +134,4 @@ class OverviewTableViewController: UITableViewController {
         return true
     }
     */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
