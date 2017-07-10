@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Vi-o2-cjo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Vi-o2-cjo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <scene sceneID="AbQ-bV-xGo">
             <objects>
                 <navigationController id="8Vi-o2-cjo" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xyQ-T4-mcq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xyQ-T4-mcq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -28,7 +28,7 @@
         <!--Text Edit-->
         <scene sceneID="Us3-hs-doo">
             <objects>
-                <viewController title="Text Edit" id="z52-8f-JkC" sceneMemberID="viewController">
+                <viewController title="Text Edit" id="z52-8f-JkC" customClass="TextEditViewController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wjo-95-lJa"/>
                         <viewControllerLayoutGuide type="bottom" id="hHO-IV-IWm"/>
@@ -37,19 +37,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbX-Js-rbz">
-                                <rect key="frame" x="16" y="64" width="343" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bQz-qd-9Y4">
+                                <rect key="frame" x="22" y="90" width="331" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Text Edit" id="8PX-kc-Zvw">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="fx8-v8-eef"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="fx8-v8-eef">
+                            <connections>
+                                <action selector="shareButton:" destination="z52-8f-JkC" id="189-wk-DZW"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="bQz-qd-9Y4" id="2eF-bf-ndC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGx-Pk-BZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +66,7 @@
         <!--Geburtstag-->
         <scene sceneID="v8D-zD-NQM">
             <objects>
-                <tableViewController title="Geburtstag" id="UMt-ic-NyB" sceneMemberID="viewController">
+                <tableViewController title="Geburtstag" id="UMt-ic-NyB" customClass="OneKategoryViewController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oTV-M1-SJV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +76,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SJb-Iw-k4P" id="Tg1-WS-NWt" propertyAccessControl="none">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -79,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="Z0m-1Q-M9F" id="Roc-OZ-eqd" propertyAccessControl="none">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -90,7 +98,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="z52-8f-JkC" kind="show" id="1ci-qR-xfG"/>
+                        <segue destination="z52-8f-JkC" kind="show" identifier="toTextEdit" id="1ci-qR-xfG"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2IM-vd-UrK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,7 +108,7 @@
         <!--Sprüche-->
         <scene sceneID="BiI-6q-klb">
             <objects>
-                <tableViewController title="Sprüche" id="zsx-1s-qC8" sceneMemberID="viewController">
+                <tableViewController title="Sprüche" id="zsx-1s-qC8" customClass="KategoryViewController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mtF-Do-BgK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +118,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="YAb-lb-vug" id="ycJ-e1-NYX" colorLabel="IBBuiltInLabel-Red">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" label="GebTag">
@@ -128,7 +136,8 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="UMt-ic-NyB" kind="show" id="SFj-fa-oh8"/>
+                        <outlet property="tableview" destination="mtF-Do-BgK" id="y35-k5-5Sd"/>
+                        <segue destination="UMt-ic-NyB" kind="show" identifier="toKategory" id="SFj-fa-oh8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yz7-WD-8q3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -189,7 +198,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0St-Uu-XrH" id="GGS-lI-h2e">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -350,7 +359,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avT-Sh-OeE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="exN-Yc-SdX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="exN-Yc-SdX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -367,9 +376,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="buR-mg-iMA"/>
         <segue reference="loy-1D-Iu1"/>
-        <segue reference="SFj-fa-oh8"/>
-        <segue reference="1ci-qR-xfG"/>
         <segue reference="HWM-SZ-GQC"/>
         <segue reference="j7H-jc-noa"/>
+        <segue reference="SFj-fa-oh8"/>
+        <segue reference="1ci-qR-xfG"/>
     </inferredMetricsTieBreakers>
 </document>

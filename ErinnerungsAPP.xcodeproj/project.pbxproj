@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61DA5F01F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B61DA5EE1F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodeld */; };
+		B6988CD51F13E96500670FBF /* AnniversaryClaims+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CCF1F13E96500670FBF /* AnniversaryClaims+CoreDataClass.swift */; };
+		B6988CD61F13E96500670FBF /* AnniversaryClaims+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CD01F13E96500670FBF /* AnniversaryClaims+CoreDataProperties.swift */; };
+		B6988CD71F13E96500670FBF /* BirthdayClaims+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CD11F13E96500670FBF /* BirthdayClaims+CoreDataClass.swift */; };
+		B6988CD81F13E96500670FBF /* BirthdayClaims+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CD21F13E96500670FBF /* BirthdayClaims+CoreDataProperties.swift */; };
+		B6988CD91F13E96500670FBF /* Kategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CD31F13E96500670FBF /* Kategory+CoreDataClass.swift */; };
+		B6988CDA1F13E96500670FBF /* Kategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CD41F13E96500670FBF /* Kategory+CoreDataProperties.swift */; };
+		B6988CDF1F13E9AE00670FBF /* ClaimTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CDB1F13E9AE00670FBF /* ClaimTableViewCell.swift */; };
+		B6988CE01F13E9AE00670FBF /* KategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CDC1F13E9AE00670FBF /* KategoryViewController.swift */; };
+		B6988CE11F13E9AE00670FBF /* OneKategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CDD1F13E9AE00670FBF /* OneKategoryViewController.swift */; };
+		B6988CE21F13E9AE00670FBF /* TextEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6988CDE1F13E9AE00670FBF /* TextEditViewController.swift */; };
 		B6E81E121F08FF5500826A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E81E111F08FF5500826A84 /* AppDelegate.swift */; };
 		B6E81E141F08FF5500826A84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E81E131F08FF5500826A84 /* ViewController.swift */; };
 		B6E81E171F08FF5500826A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E81E151F08FF5500826A84 /* Main.storyboard */; };
-		B6E81E1A1F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6E81E181F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld */; };
 		B6E81E1C1F08FF5500826A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E81E1B1F08FF5500826A84 /* Assets.xcassets */; };
 		B6E81E1F1F08FF5500826A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E81E1D1F08FF5500826A84 /* LaunchScreen.storyboard */; };
 		D1FD2B891F12094600DA8C1D /* OverviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD2B881F12094600DA8C1D /* OverviewTableViewController.swift */; };
@@ -18,11 +28,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B61DA5EF1F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ErinnerungsAPP.xcdatamodel; sourceTree = "<group>"; };
+		B6988CCF1F13E96500670FBF /* AnniversaryClaims+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AnniversaryClaims+CoreDataClass.swift"; path = "../../../Desktop/ErinnerungsAPP/AnniversaryClaims+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B6988CD01F13E96500670FBF /* AnniversaryClaims+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AnniversaryClaims+CoreDataProperties.swift"; path = "../../../Desktop/ErinnerungsAPP/AnniversaryClaims+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B6988CD11F13E96500670FBF /* BirthdayClaims+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BirthdayClaims+CoreDataClass.swift"; path = "../../../Desktop/ErinnerungsAPP/BirthdayClaims+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B6988CD21F13E96500670FBF /* BirthdayClaims+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "BirthdayClaims+CoreDataProperties.swift"; path = "../../../Desktop/ErinnerungsAPP/BirthdayClaims+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B6988CD31F13E96500670FBF /* Kategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Kategory+CoreDataClass.swift"; path = "../../../Desktop/ErinnerungsAPP/Kategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B6988CD41F13E96500670FBF /* Kategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Kategory+CoreDataProperties.swift"; path = "../../../Desktop/ErinnerungsAPP/Kategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B6988CDB1F13E9AE00670FBF /* ClaimTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClaimTableViewCell.swift; path = ../../../Desktop/ErinnerungsAPP/ErinnerungsAPP/ClaimTableViewCell.swift; sourceTree = "<group>"; };
+		B6988CDC1F13E9AE00670FBF /* KategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KategoryViewController.swift; path = ../../../Desktop/ErinnerungsAPP/ErinnerungsAPP/KategoryViewController.swift; sourceTree = "<group>"; };
+		B6988CDD1F13E9AE00670FBF /* OneKategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OneKategoryViewController.swift; path = ../../../Desktop/ErinnerungsAPP/ErinnerungsAPP/OneKategoryViewController.swift; sourceTree = "<group>"; };
+		B6988CDE1F13E9AE00670FBF /* TextEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextEditViewController.swift; path = ../../../Desktop/ErinnerungsAPP/ErinnerungsAPP/TextEditViewController.swift; sourceTree = "<group>"; };
 		B6E81E0E1F08FF5500826A84 /* ErinnerungsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErinnerungsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E81E111F08FF5500826A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6E81E131F08FF5500826A84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6E81E161F08FF5500826A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6E81E191F08FF5500826A84 /* ErinnerungsAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ErinnerungsAPP.xcdatamodel; sourceTree = "<group>"; };
 		B6E81E1B1F08FF5500826A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E81E1E1F08FF5500826A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6E81E201F08FF5500826A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,15 +80,25 @@
 		B6E81E101F08FF5500826A84 /* ErinnerungsAPP */ = {
 			isa = PBXGroup;
 			children = (
+				B6988CCF1F13E96500670FBF /* AnniversaryClaims+CoreDataClass.swift */,
+				B61DA5EE1F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodeld */,
+				B6988CD01F13E96500670FBF /* AnniversaryClaims+CoreDataProperties.swift */,
+				B6988CD11F13E96500670FBF /* BirthdayClaims+CoreDataClass.swift */,
+				B6988CD21F13E96500670FBF /* BirthdayClaims+CoreDataProperties.swift */,
+				B6988CD31F13E96500670FBF /* Kategory+CoreDataClass.swift */,
+				B6988CD41F13E96500670FBF /* Kategory+CoreDataProperties.swift */,
 				B6E81E111F08FF5500826A84 /* AppDelegate.swift */,
 				B6E81E131F08FF5500826A84 /* ViewController.swift */,
 				B6E81E151F08FF5500826A84 /* Main.storyboard */,
+				B6988CDB1F13E9AE00670FBF /* ClaimTableViewCell.swift */,
+				B6988CDC1F13E9AE00670FBF /* KategoryViewController.swift */,
+				B6988CDD1F13E9AE00670FBF /* OneKategoryViewController.swift */,
+				B6988CDE1F13E9AE00670FBF /* TextEditViewController.swift */,
 				D1FD2B881F12094600DA8C1D /* OverviewTableViewController.swift */,
 				D1FD2B8A1F12574100DA8C1D /* DetailController.swift */,
 				B6E81E1B1F08FF5500826A84 /* Assets.xcassets */,
 				B6E81E1D1F08FF5500826A84 /* LaunchScreen.storyboard */,
 				B6E81E201F08FF5500826A84 /* Info.plist */,
-				B6E81E181F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld */,
 			);
 			path = ErinnerungsAPP;
 			sourceTree = "<group>";
@@ -145,11 +175,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6988CD61F13E96500670FBF /* AnniversaryClaims+CoreDataProperties.swift in Sources */,
+				B6988CE21F13E9AE00670FBF /* TextEditViewController.swift in Sources */,
 				B6E81E141F08FF5500826A84 /* ViewController.swift in Sources */,
-				B6E81E1A1F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld in Sources */,
 				D1FD2B891F12094600DA8C1D /* OverviewTableViewController.swift in Sources */,
 				D1FD2B8B1F12574100DA8C1D /* DetailController.swift in Sources */,
+				B6988CE01F13E9AE00670FBF /* KategoryViewController.swift in Sources */,
+				B6988CD81F13E96500670FBF /* BirthdayClaims+CoreDataProperties.swift in Sources */,
+				B6988CD71F13E96500670FBF /* BirthdayClaims+CoreDataClass.swift in Sources */,
+				B6988CD91F13E96500670FBF /* Kategory+CoreDataClass.swift in Sources */,
+				B6988CDF1F13E9AE00670FBF /* ClaimTableViewCell.swift in Sources */,
+				B61DA5F01F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodeld in Sources */,
+				B6988CDA1F13E96500670FBF /* Kategory+CoreDataProperties.swift in Sources */,
+				B6988CE11F13E9AE00670FBF /* OneKategoryViewController.swift in Sources */,
 				B6E81E121F08FF5500826A84 /* AppDelegate.swift in Sources */,
+				B6988CD51F13E96500670FBF /* AnniversaryClaims+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,14 +356,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B6E81E181F08FF5500826A84 /* ErinnerungsAPP.xcdatamodeld */ = {
+		B61DA5EE1F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B6E81E191F08FF5500826A84 /* ErinnerungsAPP.xcdatamodel */,
+				B61DA5EF1F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodel */,
 			);
-			currentVersion = B6E81E191F08FF5500826A84 /* ErinnerungsAPP.xcdatamodel */;
-			path = ErinnerungsAPP.xcdatamodeld;
-			sourceTree = "<group>";
+			currentVersion = B61DA5EF1F13F05400EA31B1 /* ErinnerungsAPP.xcdatamodel */;
+			name = ErinnerungsAPP.xcdatamodeld;
+			path = "/Volumes/UUI/untitled folder/ErinnerungsAPP.xcdatamodeld";
+			sourceTree = "<absolute>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
