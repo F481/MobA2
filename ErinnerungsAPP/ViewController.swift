@@ -67,6 +67,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return categories[row]
+    
     }
     
     // Catpure the picker view selection
@@ -98,13 +99,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 context.delete(editReminder!)
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
                 
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "OverviewTableViewController") as! OverviewTableViewController
-                let navigationController = UINavigationController(rootViewController: vc)
-                self.present(navigationController, animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
+                //let vc = self.storyboard?.instantiateViewController(withIdentifier: "OverviewTableViewController") //as! OverviewTableViewController
+                //let navigationController = UINavigationController(rootViewController: vc!)
+                //self.present(navigationController, animated: true, completion: nil)
             }
             
             // move back to overview
-            let _ = navigationController?.popViewController(animated: true)
+            //let _ = navigationController?.popViewController(animated: true)
+            self.navigationController?.popViewController(animated: true)
         } else {
             let alert = UIAlertController(title: "Fehler", message:
                 "Bitte gib der Erinnerung einen Namen!", preferredStyle: UIAlertControllerStyle.alert)

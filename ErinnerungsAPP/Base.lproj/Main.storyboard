@@ -147,7 +147,7 @@
         <!--ErinnerungsAPP-->
         <scene sceneID="zSH-BE-yih">
             <objects>
-                <viewController id="ned-jp-S7E" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainView" id="ned-jp-S7E" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Kvr-vB-JS0"/>
                         <viewControllerLayoutGuide type="bottom" id="ixC-hN-ROk"/>
@@ -219,13 +219,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableOverview" destination="dmY-vQ-N2c" id="IMR-mp-Luk"/>
-                        <segue destination="TIW-D5-VXX" kind="show" id="dLY-ze-gR3"/>
+                        <segue destination="TIW-D5-VXX" kind="show" identifier="toReminder2" id="dLY-ze-gR3"/>
                         <segue destination="gZV-ly-oEm" kind="show" id="JI2-nn-a3Z"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80G-cZ-6vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3119.1999999999998" y="78.710644677661179"/>
+            <point key="canvasLocation" x="1676" y="58"/>
         </scene>
         <!--Geb Name-->
         <scene sceneID="THj-sG-y6z">
@@ -299,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxi-dJ-OS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3999.1999999999998" y="281.10944527736132"/>
+            <point key="canvasLocation" x="3423" y="270"/>
         </scene>
         <!--New/Edit-->
         <scene sceneID="TlY-ix-DMt">
@@ -351,14 +351,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe3-Ku-Xca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3996" y="-432.23388305847078"/>
+            <point key="canvasLocation" x="3420" y="-443"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HWM-SZ-GQC"/>
-        <segue reference="j7H-jc-noa"/>
         <segue reference="buR-mg-iMA"/>
         <segue reference="SFj-fa-oh8"/>
         <segue reference="1ci-qR-xfG"/>
+        <segue reference="HWM-SZ-GQC"/>
+        <segue reference="j7H-jc-noa"/>
     </inferredMetricsTieBreakers>
 </document>

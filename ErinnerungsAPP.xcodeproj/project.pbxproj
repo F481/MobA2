@@ -18,6 +18,7 @@
 		B61DA6051F13F5F300EA31B1 /* KategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DA5FB1F13F5F300EA31B1 /* KategoryViewController.swift */; };
 		B61DA6061F13F5F300EA31B1 /* OneKategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DA5FC1F13F5F300EA31B1 /* OneKategoryViewController.swift */; };
 		B61DA6071F13F5F300EA31B1 /* TextEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DA5FD1F13F5F300EA31B1 /* TextEditViewController.swift */; };
+		B65939A01F1404A900FD7988 /* AlertHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B659399F1F1404A900FD7988 /* AlertHandler.swift */; };
 		B6E81E121F08FF5500826A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E81E111F08FF5500826A84 /* AppDelegate.swift */; };
 		B6E81E141F08FF5500826A84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E81E131F08FF5500826A84 /* ViewController.swift */; };
 		B6E81E171F08FF5500826A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6E81E151F08FF5500826A84 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		B61DA5FB1F13F5F300EA31B1 /* KategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KategoryViewController.swift; sourceTree = "<group>"; };
 		B61DA5FC1F13F5F300EA31B1 /* OneKategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneKategoryViewController.swift; sourceTree = "<group>"; };
 		B61DA5FD1F13F5F300EA31B1 /* TextEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEditViewController.swift; sourceTree = "<group>"; };
+		B659399F1F1404A900FD7988 /* AlertHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHandler.swift; sourceTree = "<group>"; };
 		B6E81E0E1F08FF5500826A84 /* ErinnerungsAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ErinnerungsAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E81E111F08FF5500826A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6E81E131F08FF5500826A84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				B61DA5F11F13F58500EA31B1 /* ErinnerungsAPP.xcdatamodeld */,
 				B61DA6081F13F64900EA31B1 /* Database Modules */,
 				B61DA5F81F13F5F300EA31B1 /* ClaimTableViewCell.swift */,
+				B659399F1F1404A900FD7988 /* AlertHandler.swift */,
 				B61DA5FB1F13F5F300EA31B1 /* KategoryViewController.swift */,
 				B61DA5FC1F13F5F300EA31B1 /* OneKategoryViewController.swift */,
 				B61DA5FD1F13F5F300EA31B1 /* TextEditViewController.swift */,
@@ -186,6 +189,7 @@
 				B61DA5FF1F13F5F300EA31B1 /* AnniversaryClaims+CoreDataProperties.swift in Sources */,
 				B61DA6071F13F5F300EA31B1 /* TextEditViewController.swift in Sources */,
 				B61DA5F31F13F58500EA31B1 /* ErinnerungsAPP.xcdatamodeld in Sources */,
+				B65939A01F1404A900FD7988 /* AlertHandler.swift in Sources */,
 				B61DA6031F13F5F300EA31B1 /* Kategory+CoreDataClass.swift in Sources */,
 				B6E81E141F08FF5500826A84 /* ViewController.swift in Sources */,
 				D1FD2B891F12094600DA8C1D /* OverviewTableViewController.swift in Sources */,

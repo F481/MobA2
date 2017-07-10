@@ -98,7 +98,7 @@ class OverviewTableViewController: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         
-        performSegue(withIdentifier: "detailSegue", sender: cell)
+        self.performSegue(withIdentifier: "detailSegue", sender: self)
     }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
