@@ -5,7 +5,25 @@
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="AnniversaryClaims" representedClassName="AnniversaryClaims" syncable="YES">
+        <attribute name="aClaims" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="kategoryRel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kategory" inverseName="anniversaryRel" inverseEntity="Kategory" syncable="YES"/>
+    </entity>
+    <entity name="BirthdayClaims" representedClassName="BirthdayClaims" syncable="YES">
+        <attribute name="bClaims" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="kategoryRel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kategory" inverseName="birthdayRel" inverseEntity="Kategory" syncable="YES"/>
+    </entity>
+    <entity name="Kategory" representedClassName="Kategory" syncable="YES">
+        <attribute name="anniversary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kategories" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="anniversaryRel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AnniversaryClaims" inverseName="kategoryRel" inverseEntity="AnniversaryClaims" syncable="YES"/>
+        <relationship name="birthdayRel" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BirthdayClaims" inverseName="kategoryRel" inverseEntity="BirthdayClaims" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Reminder" positionX="-54" positionY="-9" width="128" height="90"/>
+	<element name="Kategory" positionX="-2" positionY="-219" width="128" height="120"/>
+        <element name="BirthdayClaims" positionX="-216" positionY="-174" width="128" height="75"/>
+        <element name="AnniversaryClaims" positionX="223" positionY="-189" width="128" height="75"/>
     </elements>
 </model>
