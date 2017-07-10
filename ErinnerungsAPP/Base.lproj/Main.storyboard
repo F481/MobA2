@@ -13,7 +13,7 @@
         <scene sceneID="AbQ-bV-xGo">
             <objects>
                 <navigationController id="8Vi-o2-cjo" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xyQ-T4-mcq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xyQ-T4-mcq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -179,7 +179,7 @@
         <!--Erinnerungen-->
         <scene sceneID="Yoj-Yd-UFA">
             <objects>
-                <tableViewController title="Erinnerungen" id="54g-FG-VR1" customClass="OverviewTableViewController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="OverviewTableViewController" title="Erinnerungen" id="54g-FG-VR1" customClass="OverviewTableViewController" customModule="ErinnerungsAPP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dmY-vQ-N2c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +279,7 @@
                     <navigationItem key="navigationItem" title="GebName" id="0Wg-HL-PCU">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="QmC-7e-yXb">
                             <connections>
-                                <segue destination="TIW-D5-VXX" kind="show" id="gCh-Xr-Iew"/>
+                                <segue destination="TIW-D5-VXX" kind="show" identifier="editSegue" id="gCh-Xr-Iew"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -350,7 +350,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="avT-Sh-OeE" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="exN-Yc-SdX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="exN-Yc-SdX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -365,11 +365,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="loy-1D-Iu1"/>
         <segue reference="buR-mg-iMA"/>
-        <segue reference="HWM-SZ-GQC"/>
-        <segue reference="gCh-Xr-Iew"/>
+        <segue reference="loy-1D-Iu1"/>
         <segue reference="SFj-fa-oh8"/>
         <segue reference="1ci-qR-xfG"/>
+        <segue reference="HWM-SZ-GQC"/>
+        <segue reference="j7H-jc-noa"/>
     </inferredMetricsTieBreakers>
 </document>

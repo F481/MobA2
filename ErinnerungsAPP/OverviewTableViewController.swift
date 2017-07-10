@@ -94,7 +94,7 @@ class OverviewTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("select row")
         selectedReminder = reminders[indexPath.row]
-                
+        
         let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         
@@ -107,7 +107,6 @@ class OverviewTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "detailSegue" {
             let nextScene = segue.destination as! DetailController
-            
             nextScene.reminder = selectedReminder
         }
     }
