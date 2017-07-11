@@ -43,6 +43,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         else {
             reminderNameField.text = editReminder?.name
             reminderDate.setDate(editReminder?.date as! Date, animated: true)
+            // TODO save category as int not int16
             let categoryIndex = Int((editReminder?.catecory)!)
             categoryPicker.selectRow(categoryIndex, inComponent: 0, animated: true)
             selectedCategory = categoryIndex
@@ -99,14 +100,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 context.delete(editReminder!)
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
                 
+                // call it here to come back to detail and second time back to overview
                 self.navigationController?.popViewController(animated: true)
-                //let vc = self.storyboard?.instantiateViewController(withIdentifier: "OverviewTableViewController") //as! OverviewTableViewController
-                //let navigationController = UINavigationController(rootViewController: vc!)
-                //self.present(navigationController, animated: true, completion: nil)
             }
             
             // move back to overview
-            //let _ = navigationController?.popViewController(animated: true)
             self.navigationController?.popViewController(animated: true)
         } else {
             let alert = UIAlertController(title: "Fehler", message:

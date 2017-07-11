@@ -54,6 +54,7 @@ class OverviewTableViewController: UITableViewController {
         let cell = UITableViewCell()
         let reminder = reminders[indexPath.row]
         
+        // set reminder name as text label of cell
         if let myName = reminder.name {
             cell.textLabel?.text = myName
         }
