@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Vi-o2-cjo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Vi-o2-cjo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -76,7 +76,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SJb-Iw-k4P" id="Tg1-WS-NWt" propertyAccessControl="none">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -87,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="Z0m-1Q-M9F" id="Roc-OZ-eqd" propertyAccessControl="none">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -118,7 +118,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="YAb-lb-vug" id="ycJ-e1-NYX" colorLabel="IBBuiltInLabel-Red">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" label="GebTag">
@@ -197,7 +197,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0St-Uu-XrH" id="GGS-lI-h2e">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -219,13 +219,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableOverview" destination="dmY-vQ-N2c" id="IMR-mp-Luk"/>
-                        <segue destination="TIW-D5-VXX" kind="show" identifier="toReminder2" id="dLY-ze-gR3"/>
-                        <segue destination="gZV-ly-oEm" kind="show" id="JI2-nn-a3Z"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80G-cZ-6vN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1676" y="58"/>
+            <point key="canvasLocation" x="1303" y="79"/>
         </scene>
         <!--Geb Name-->
         <scene sceneID="THj-sG-y6z">
@@ -299,7 +297,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxi-dJ-OS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3423" y="270"/>
+            <point key="canvasLocation" x="2335" y="467"/>
         </scene>
         <!--New/Edit-->
         <scene sceneID="TlY-ix-DMt">
@@ -351,14 +349,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe3-Ku-Xca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3420" y="-443"/>
+            <point key="canvasLocation" x="2335" y="-212"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="buR-mg-iMA"/>
-        <segue reference="SFj-fa-oh8"/>
         <segue reference="1ci-qR-xfG"/>
-        <segue reference="HWM-SZ-GQC"/>
+        <segue reference="SFj-fa-oh8"/>
+        <segue reference="buR-mg-iMA"/>
         <segue reference="j7H-jc-noa"/>
     </inferredMetricsTieBreakers>
 </document>

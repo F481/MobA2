@@ -100,7 +100,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 context.delete(editReminder!)
                 (UIApplication.shared.delegate as! AppDelegate).saveContext()
                 
-                // call it here to come back to detail and second time back to overview
+                // call it here to come back to detail and second time back to overview. We had some problems, because to move with navigation controller to a view is only possible to UIViewController, but overview is UITableViewController.
                 self.navigationController?.popViewController(animated: true)
             }
             
